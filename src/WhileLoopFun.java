@@ -41,7 +41,7 @@ public class WhileLoopFun {
     }
 
     public boolean isPrime(int number) {
-        int result = 0;
+        int result;
         int count = 0;
         int value = 1;
         while(value <= number){
