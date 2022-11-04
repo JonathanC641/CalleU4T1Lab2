@@ -19,26 +19,26 @@ public class Main {
 //        System.out.println(fun.countLetter("excellente", "e"));
 //        System.out.println(fun.countLetter("rawrrrrrr", "r"));
 //
-        System.out.println("-- test maxDoubles --");
-        System.out.println(fun.maxDoubles(4, 20));
-        System.out.println(fun.maxDoubles(2, 65));
-        System.out.println(fun.maxDoubles(5, 500));
-        System.out.println(fun.maxDoubles(2, 64));
-        System.out.println(fun.maxDoubles(2, 63));
-        System.out.println(fun.maxDoubles(8, 10));
-        System.out.println(fun.maxDoubles(8, 5));
-        System.out.println(fun.maxDoubles(10, 456000));
-//        System.out.println("-- test isPrime --");
-//        System.out.println(fun.isPrime(2));
-//        System.out.println(fun.isPrime(13));
-//        System.out.println(fun.isPrime(773));
-//        System.out.println(fun.isPrime(9857));
-//        System.out.println(fun.isPrime(101879));
-//        System.out.println(fun.isPrime(1));
-//        System.out.println(fun.isPrime(14));
-//        System.out.println(fun.isPrime(30));
-//        System.out.println(fun.isPrime(771));
-//        System.out.println(fun.isPrime(93243));
+//        System.out.println("-- test maxDoubles --");
+//        System.out.println(fun.maxDoubles(4, 20));
+//        System.out.println(fun.maxDoubles(2, 65));
+//        System.out.println(fun.maxDoubles(5, 500));
+//        System.out.println(fun.maxDoubles(2, 64));
+//        System.out.println(fun.maxDoubles(2, 63));
+//        System.out.println(fun.maxDoubles(8, 10));
+//        System.out.println(fun.maxDoubles(8, 5));
+//        System.out.println(fun.maxDoubles(10, 456000));
+        System.out.println("-- test isPrime --");
+        System.out.println(fun.isPrime(2));
+        System.out.println(fun.isPrime(13));
+        System.out.println(fun.isPrime(773));
+        System.out.println(fun.isPrime(9857));
+        System.out.println(fun.isPrime(101879));
+        System.out.println(fun.isPrime(1));
+        System.out.println(fun.isPrime(14));
+        System.out.println(fun.isPrime(30));
+        System.out.println(fun.isPrime(771));
+        System.out.println(fun.isPrime(93243));
 
 
     }

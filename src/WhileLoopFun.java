@@ -5,11 +5,6 @@ public class WhileLoopFun {
      */
     public WhileLoopFun() { }
 
-    /**Prints the individual digits in number separately, starting with the rightmost digit first, on separate lines.
-     Example:  If number is 361, this methods prints 1, then 6, then 3 (on separate lines)
-     Example:  If number is 150856, this methods prints 6, then 5, then 8, then 0, then 5, then 1 (on separate
-     lines)
-     */
     public void printDigits(int number) {
         String numbers = "" + number;
         int count = numbers.length();
@@ -21,14 +16,7 @@ public class WhileLoopFun {
         }
     }
 
-    /** Returns the number of times letter occurs in word.
-     Example:  If word is "apple" and letter is "p",  this methods returns 2
-     Example:  If word is "excellente" and letter is "e",  this methods returns 4
 
-     PRECONDITION: letter has length 1
-     Note!  This could arguably be done easier with a for loop, so if you already know how to use for loops,
-     try it this time using a while loop!
-     */
     public int countLetter(String word, String letter) {
         int count = 0;
         while(word.contains(letter)){
@@ -41,24 +29,28 @@ public class WhileLoopFun {
     /*Precondition: number > 0, threshold > 0*/
     public int maxDoubles(int number, int threshold) {
         int count = 0;
-        int ogvalue = number;
-        while(number < threshold && (threshold - number != ogvalue)){
+        while(number <= threshold) {
             number *= 2;
             count++;
         }
-        return count;
-    }
-
-    public boolean isPrime(int number) {
-        if(number == 1){
-            return false;
+        if (count == 0){
+            return count;
         }else{
-            return true;
+            return count-1;
         }
     }
 
-
-
-
-
+    public boolean isPrime(int number) {
+        int result = 0;
+        int count = 0;
+        int value = 1;
+        while(value <= number){
+            result = number % value;
+            if(result == 0){
+                count++;
+            }
+            value++;
+        }
+        return count == 2;
+    }
 }
